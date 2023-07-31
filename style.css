@@ -6,3 +6,59 @@
     background-size: 100% 100%;
     min-height: 6699px;
 } */
+.text-xxs{
+    font-size: 14px;
+}
+
+.font-alegreya{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.font-nunito{
+    font-family: 'Nunito', sans-serif;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-slower {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-slowest {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Customize the animation duration as per your preference */
+  .animate-spin-slower {
+    animation: spin 15s linear infinite; /* Adjust the duration value to make it slower */
+  }
+
+  .animate-spin-slowest {
+    animation: spin 35s linear infinite; /* Adjust the duration value to make it slower */
+  }
+  
+
+/* navbar */
+
+.nav-items:hover {
+  color: #eabb5f;
+  text-shadow: 0 0 10px #eabb5f, 0 0 20px #eabb5f, 0 0 40px #eabb5f,
+    0 0 80px #eabb5f, 0 0 120px #eabb5f;
+}
