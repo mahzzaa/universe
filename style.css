@@ -18,6 +18,8 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
+/* spin animation */
 @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -45,6 +47,16 @@
     }
   }
   
+  @keyframes spin-revert-slowest {
+    0%, 100% {
+      transform: rotateX(5deg); /* Rotate a little to the right */
+    }
+    50% {
+      transform: rotateX(-5deg); /* Rotate back to the left after 50% */
+    }
+  }
+  
+  
   /* Customize the animation duration as per your preference */
   .animate-spin-slower {
     animation: spin 15s linear infinite; /* Adjust the duration value to make it slower */
@@ -53,7 +65,30 @@
   .animate-spin-slowest {
     animation: spin 35s linear infinite; /* Adjust the duration value to make it slower */
   }
+
+  .animate-spin-revert-slowest {
+    animation: spin 35s linear infinite; 
+  }
   
+
+/* move animation */
+@keyframes move-left-and-right {
+  0% {
+    transform: translateX(100%); /* Start at the most right of the screen */
+  }
+  100% {
+    transform: translateX(-2200%); /* Move to the most left of the screen and beyond */
+  }
+}
+
+  
+  /* Customize the animation duration and timing function as per your preference */
+  .animate-move-left-and-right {
+    animation: move-left-and-right 2s linear infinite; /* Adjust the duration value to control the speed */
+  }
+  
+
+
 
 /* navbar */
 
@@ -61,4 +96,102 @@
   color: #eabb5f;
   text-shadow: 0 0 10px #eabb5f, 0 0 20px #eabb5f, 0 0 40px #eabb5f,
     0 0 80px #eabb5f, 0 0 120px #eabb5f;
+}
+
+
+/* header */
+
+span{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1),
+  0 0 8px rgba(255, 255, 255, 0.1),
+  0 0 12px rgba(255, 255, 255, 1);
+  animation: animate 3s linear infinite;
+}
+
+span::before{
+  content: '';
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg , #fff , transparent);
+}
+
+@keyframes animate {
+  0%{
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+span:nth-child(1){
+  top: 0;
+  right: 0;
+  left: initial;
+  animation-delay: 0;
+  animation-duration: 1s;
+}
+
+
+span:nth-child(2){
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+
+span:nth-child(3){
+  top: 80px;
+  right: 0;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+
+span:nth-child(4){
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+
+span:nth-child(5){
+  top: 0;
+  right: 400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+
+span:nth-child(6){
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+span:nth-child(7){
+  top: 300px;
+  right: 0;
+  left: initial;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
 }
