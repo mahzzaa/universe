@@ -101,6 +101,35 @@
 
 /* header */
 
+
+/* meteorite */
+
+.meteorite{
+  animation: animate 3s linear infinite;
+}
+
+.meteorite2{
+  animation: animate 2.5s linear infinite;
+  top: 0;
+  right: 580px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+
+
+.meteorite3{
+  animation: animate 2.5s linear infinite;
+  top: 300px;
+  right: 980px;
+  left: initial;
+  animation-delay: 2s;
+  animation-duration: 1.5s;
+}
+
+
+/* span */
+
 span{
   position: absolute;
   top: 25%;
@@ -114,6 +143,7 @@ span{
   0 0 12px rgba(255, 255, 255, 1);
   animation: animate 3s linear infinite;
 }
+
 
 span::before{
   content: '';
