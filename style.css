@@ -105,25 +105,30 @@
 /* meteorite */
 
 .meteorite{
-  animation: animate 3s linear infinite;
+  animation: animate 1.5s linear infinite;
+  top: 100;
+  right: 20px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
 }
 
 .meteorite2{
   animation: animate 2.5s linear infinite;
   top: 0;
-  right: 580px;
+  right: 400px;
   left: initial;
-  animation-delay: 0.2s;
-  animation-duration: 3s;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
 }
 
 
 .meteorite3{
   animation: animate 2.5s linear infinite;
-  top: 300px;
-  right: 980px;
+  top: 90px;
+  right: 0px;
   left: initial;
-  animation-delay: 2s;
+  animation-delay: 0.1s;
   animation-duration: 1.5s;
 }
 
