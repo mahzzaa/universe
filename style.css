@@ -6,89 +6,17 @@
     background-size: 100% 100%;
     min-height: 6699px;
 } */
-.text-xxs{
-    font-size: 14px;
+.text-xxs {
+  font-size: 14px;
 }
 
-.font-alegreya{
-    font-family: 'Alegreya Sans SC', sans-serif;
+.font-alegreya {
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 
-.font-nunito{
-    font-family: 'Nunito', sans-serif;
+.font-nunito {
+  font-family: "Nunito", sans-serif;
 }
-
-
-/* spin animation */
-@keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes spin-slower {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes spin-slowest {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes spin-revert-slowest {
-    0%, 100% {
-      transform: rotateX(5deg); /* Rotate a little to the right */
-    }
-    50% {
-      transform: rotateX(-5deg); /* Rotate back to the left after 50% */
-    }
-  }
-  
-  
-  /* Customize the animation duration as per your preference */
-  .animate-spin-slower {
-    animation: spin 15s linear infinite; /* Adjust the duration value to make it slower */
-  }
-
-  .animate-spin-slowest {
-    animation: spin 35s linear infinite; /* Adjust the duration value to make it slower */
-  }
-
-  .animate-spin-revert-slowest {
-    animation: spin 35s linear infinite; 
-  }
-  
-
-/* move animation */
-@keyframes move-left-and-right {
-  0% {
-    transform: translateX(100%); /* Start at the most right of the screen */
-  }
-  100% {
-    transform: translateX(-2200%); /* Move to the most left of the screen and beyond */
-  }
-}
-
-  
-  /* Customize the animation duration and timing function as per your preference */
-  .animate-move-left-and-right {
-    animation: move-left-and-right 2s linear infinite; /* Adjust the duration value to control the speed */
-  }
-  
-
-
 
 /* navbar */
 
@@ -98,13 +26,87 @@
     0 0 80px #eabb5f, 0 0 120px #eabb5f;
 }
 
+.active {
+  color: #eabb5f;
+  text-shadow: 0 0 10px #eabb5f, 0 0 20px #eabb5f, 0 0 40px #eabb5f,
+    0 0 80px #eabb5f, 0 0 120px #eabb5f;
+}
+/* mobile size */
+
+
+/* spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slower {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slowest {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-revert-slowest {
+  0%,
+  100% {
+    transform: rotateX(5deg); /* Rotate a little to the right */
+  }
+  50% {
+    transform: rotateX(-5deg); /* Rotate back to the left after 50% */
+  }
+}
+
+/* Customize the animation duration as per your preference */
+.animate-spin-slower {
+  animation: spin 15s linear infinite; /* Adjust the duration value to make it slower */
+}
+
+.animate-spin-slowest {
+  animation: spin 35s linear infinite; /* Adjust the duration value to make it slower */
+}
+
+.animate-spin-revert-slowest {
+  animation: spin 35s linear infinite;
+}
+
+/* move animation */
+@keyframes move-left-and-right {
+  0% {
+    transform: translateX(100%); /* Start at the most right of the screen */
+  }
+  100% {
+    transform: translateX(
+      -2200%
+    ); /* Move to the most left of the screen and beyond */
+  }
+}
+
+/* Customize the animation duration and timing function as per your preference */
+.animate-move-left-and-right {
+  animation: move-left-and-right 2s linear infinite; /* Adjust the duration value to control the speed */
+}
 
 /* header */
 
-
 /* meteorite */
 
-.meteorite{
+.meteorite {
   animation: animate 1.5s linear infinite;
   top: 100;
   right: 20px;
@@ -113,7 +115,7 @@
   animation-duration: 2.5s;
 }
 
-.meteorite2{
+.meteorite2 {
   animation: animate 2.5s linear infinite;
   top: 0;
   right: 400px;
@@ -122,8 +124,7 @@
   animation-duration: 2.5s;
 }
 
-
-.meteorite3{
+.meteorite3 {
   animation: animate 2.5s linear infinite;
   top: 90px;
   right: 0px;
@@ -132,10 +133,9 @@
   animation-duration: 1.5s;
 }
 
-
 /* span */
 
-span{
+span {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -143,38 +143,36 @@ span{
   height: 4px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1),
-  0 0 8px rgba(255, 255, 255, 0.1),
-  0 0 12px rgba(255, 255, 255, 1);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1), 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 12px #eabb5f;
   animation: animate 3s linear infinite;
 }
 
-
-span::before{
-  content: '';
+span::before {
+  content: "";
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
   width: 300px;
   height: 1px;
-  background: linear-gradient(90deg , #fff , transparent);
+  background: linear-gradient(90deg, #fff, transparent);
 }
 
 @keyframes animate {
-  0%{
+  0% {
     transform: rotate(315deg) translateX(0);
     opacity: 1;
   }
-  75%{
+  75% {
     opacity: 1;
   }
-  100%{
+  100% {
     transform: rotate(315deg) translateX(-1000px);
     opacity: 0;
   }
 }
 
-span:nth-child(1){
+span:nth-child(1) {
   top: 0;
   right: 0;
   left: initial;
@@ -182,16 +180,15 @@ span:nth-child(1){
   animation-duration: 1s;
 }
 
-
-span:nth-child(2){
+span:nth-child(2) {
   top: 0;
-  right: 80px;
+  right: 280px;
   left: initial;
   animation-delay: 0.2s;
   animation-duration: 3s;
 }
 
-span:nth-child(3){
+span:nth-child(3) {
   top: 80px;
   right: 0;
   left: initial;
@@ -199,7 +196,7 @@ span:nth-child(3){
   animation-duration: 2s;
 }
 
-span:nth-child(4){
+span:nth-child(4) {
   top: 0;
   right: 80px;
   left: initial;
@@ -207,25 +204,25 @@ span:nth-child(4){
   animation-duration: 1.5s;
 }
 
-span:nth-child(5){
-  top: 0;
-  right: 400px;
+span:nth-child(5) {
+  top: 20px;
+  right: 600px;
   left: initial;
   animation-delay: 0.8s;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
 }
 
-span:nth-child(6){
+span:nth-child(6) {
   top: 0;
-  right: 600px;
+  right: 1000px;
   left: initial;
   animation-delay: 1s;
   animation-duration: 3s;
 }
 
-span:nth-child(7){
-  top: 300px;
-  right: 0;
+span:nth-child(7) {
+  top: 30px;
+  right: 900px;
   left: initial;
   animation-delay: 1.2s;
   animation-duration: 1.75s;
