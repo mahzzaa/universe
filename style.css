@@ -1,11 +1,9 @@
-/* body{
-    background-image: url('./img/bg.png');
-    margin: 0;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 6699px;
-} */
+body{
+  position: static !important;
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
 .text-xxs {
   font-size: 14px;
 }
