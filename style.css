@@ -225,3 +225,23 @@ span:nth-child(7) {
   animation-delay: 1.2s;
   animation-duration: 1.75s;
 }
+
+
+/* Experience */
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7.5px);
+  }
+}
+
+.lab {
+  animation: bounce 3s infinite;
+}

@@ -24,6 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
         navLink.classList.toggle('hidden');
     });
 
-
-
 });

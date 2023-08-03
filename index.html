@@ -25,7 +25,7 @@
 
     <!-- navbar -->
     <nav
-        class="p-2 2xl:bg-[#000000ab]xl:bg-[#000000ab] lg:bg-[#000000ab] md:bg-[#000000ab] bg-black   shadow md:flex md:items-center md:justify-around md:px-12 z-10 fixed w-full text-white">
+        class="p-2 2xl:bg-[#000000ab] xl:bg-[#000000ab] lg:bg-[#000000ab] md:bg-[#000000ab] bg-[#000000cb]  shadow md:flex md:items-center md:justify-around md:px-12 z-10 fixed w-full text-white">
         <div class="flex justify-between items-center">
             <img class="h-10 inline cursor-pointer" src="./img/IMG_2153.PNG" alt="">
 
@@ -125,7 +125,8 @@
                         </g>
                     </g>
                 </svg>
-                <svg id="close-svg" class="w-12 hidden" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                <svg id="close-svg" class="w-12 hidden" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                    fill="#000000">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -138,13 +139,13 @@
         </div>
 
         <ul class="nav-link text-xs md:flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row md:items-center
-             z-[-1] md:z-auto md:static absolute md:bg-transparent bg-black
+             z-[-1] md:z-auto md:static absolute md:bg-transparent bg-[#000000cb]
              w-full md:w-auto left-0 2xl:pl-0 xl:pl-0 lg:pl-0 md:pl-0 pl-0 
              2xl:space-y-0 xl:space-y-0 lg:space-y-0 md:space-y-0 space-y-5 
              2xl:py-0 xl:py-0 lg:py-0 md:py-0 py-10 
              2xl:h-auto xl:h-auto lg:h-auto md:h-auto h-screen
              justify-center items-center flex flex-col
-             top-0 hidden">
+             top-[64px] hidden">
             <li class="nav-items uppercase py-2 px-3 my-0 active"><a onclick="scrollToSection('#home')"
                     href="#home">Home</a></li>
             <li class="nav-items uppercase py-2 px-3 my-0"><a onclick="scrollToSection('#portfolio')"
@@ -208,11 +209,13 @@
             <img src="./img/meteorite.png" alt="">
         </div>
 
-        <div class="meteorite4 absolute w-16 -z-10 right-24 top-10 rounded-full">
+        <div
+            class="meteorite4 absolute w-16 -z-10 right-24 top-10 2xl:block xl:block lg:block md:block hidden rounded-full">
             <img src="./img/movingPlanet.png" alt="">
         </div>
 
-        <div class="planets absolute w-40 left-44 bottom-32 animate-spin-slowest rounded-full opacity-90">
+        <div
+            class="planets absolute 2xl:w-40 xl:w-40 lg:w-40 md:w-40 w-20 2xl:left-40 xl:left-40 lg:left-40 md:left-40 left-10 bottom-32 animate-spin-slowest rounded-full opacity-90">
             <img src="./img/rock.png" alt="">
         </div>
 
@@ -228,8 +231,8 @@
 
         <div class="mt-20 md:pt-32">
             <a class="" href="https://github.com/mahzzaa">
-                <svg class="2xl:w-10 xl:w-10 lg:w-10 w-10 md:w-16 hover:color-[#eabb5f] " viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                    fill="none">
+                <svg class="2xl:w-10 xl:w-10 lg:w-10 w-10 md:w-16 hover:color-[#eabb5f] " viewBox="0 0 192 192"
+                    xmlns="http://www.w3.org/2000/svg" fill="none">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -250,11 +253,11 @@
 
     <!-- Skills -->
 
-    <div
-        class="relative z-0 bg-[url('/img/IMG_2148.PNG')] h-screen w-full bg-center bg-cover flex flex-col justify-center items-center pb-24">
-        <div class="rounded-full mb-5">
-            <svg class="w-14" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="12">
+    <div class="relative z-0 bg-[url('/img/IMG_2148.PNG')] h-screen w-full bg-center bg-cover flex flex-col justify-center items-center pb-24 
+        2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 pt-28">
+        <div class="rounded-full 2xl:mb-5 xl:mb-5 lg:mb-5 md:mb-5 mb-3">
+            <svg class="2xl:w-14 xl:w-14 lg:w-14 md:w-14 w-10" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
+                fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
@@ -273,78 +276,188 @@
 
         <div class="flex flex-col justify-center items-center text-center font-alegreya text-white">
             <h1 class="uppercase text-3xl font-bold mb-6">Skills</h1>
-            <p class="w-2/3 text-sm font-nunito leading-7">
+            <p class=" 2xl:text-sn xl:text-sn lg:text-sn md:text-sn text-xs font-nunito leading-7
+            2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-2/3 w-full
+            2xl:px-0 xl:px-0 lg:px-0 md:px-0 px-6 ">
                 I am a Front-End Web Developer with experience in various coding challenges, logo designing, and art. I
                 can guide you from concept to web development, having successfully completed over 20 websites where I
                 created all the materials myself. Let's collaborate to bring your ideas to life, crafting captivating
                 and user-friendly digital experiences.</p>
         </div>
 
-        <div class="skill-items grid grid-cols-3 gap-y-10 w-3/4 mt-14">
-            <div class="flex flex-col justify-center items-center gap-y-2.5">
+        <div class="z-20 skill-items grid grid-cols-2 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3
+         gap-y-5  2xl:gap-y-10 xl:gap-y-10 lg:gap-y-10 md:gap-y-10 w-full 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 mt-14">
+            <div class="flex flex-col justify-center items-center text-center gap-y-2.5">
                 <!-- img-->
-                <img class="w-20" src="./img/1.png" alt="">
+                <img class="2xl:w-20 xl:w-20 lg:w-20 md:w-20 w-12" src="./img/1.png" alt="">
                 <!-- title -->
-                <p class="font-alegreya text-white uppercase">WEB DEVELOPMENT</p>
+                <p
+                    class="font-alegreya 2xl:text-base xl:text-base lg:text-base md:text-base text-sm font-medium 2xl:text-white xl:text-white lg:text-white md:text-white text-gray-400 uppercase">
+                    WEB DEVELOPMENT</p>
                 <!-- info -->
-                <p class="font-nunito text-sm text-center text-[#262858] font-semibold w-2/3">HTML , CSS ,JS ,TAILWIND
+                <p
+                    class="font-nunito 2xl:text-sm xl:text-sm lg:text-sm md:text-sm text-xs text-center text-[#262858] font-semibold w-2/3">
+                    HTML , CSS ,JS ,TAILWIND
                     ,DAISY UI, BOOTSTRAP</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-y-2.5">
+            <div
+                class="flex flex-col justify-center items-center text-center 2xl:mb-6 xl:mb-6 lg:mb-6 md:mb-5 gap-y-2.5">
                 <!-- img-->
-                <img class="w-20" src="./img/2.png" alt="">
+                <img class="2xl:w-20 xl:w-20 lg:w-20 md:w-20 w-12" src="./img/2.png" alt="">
                 <!-- title -->
-                <p class="font-alegreya text-white uppercase">UI / UX Designer</p>
+                <p
+                    class="font-alegreya 2xl:text-base xl:text-base lg:text-base md:text-base text-sm font-medium 2xl:text-white xl:text-white lg:text-white md:text-white text-gray-400 uppercase">
+                    UI / UX Designer</p>
                 <!-- info -->
-                <p class="font-nunito text-sm text-center text-[#262858] font-semibold w-2/3">FIGMA , ADOBE XD , DORA
+                <p class="  2xl:text-sm xl:text-sm lg:text-sm md:text-sm text-xs text-center text-[#262858] font-semibold w-2/3 
+                2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 mb-3">FIGMA , ADOBE XD , DORA
                 </p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-y-2.5">
+            <div
+                class="flex flex-col justify-center items-center text-center 2xl:mb-6 xl:mb-6 lg:mb-6 md:mb-10 gap-y-2.5 mb-3">
                 <!-- img-->
-                <img class="w-20" src="./img/3.png" alt="">
+                <img class="2xl:w-20 xl:w-20 lg:w-20 md:w-20 w-12" src="./img/3.png" alt="">
                 <!-- title -->
-                <p class="font-alegreya text-white uppercase">Graphic design</p>
+                <p
+                    class="font-alegreya 2xl:text-base xl:text-base lg:text-base md:text-base text-sm font-medium 2xl:text-white xl:text-white lg:text-white md:text-white text-gray-400 uppercase">
+                    Graphic design</p>
                 <!-- info -->
-                <p class="font-nunito text-sm text-center text-[#262858] font-semibold w-2/3">PROCREATE </p>
+                <p
+                    class="font-nunito 2xl:text-sm xl:text-sm lg:text-sm md:text-sm text-xs text-center text-[#262858] font-semibold w-2/3">
+                    PROCREATE </p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-y-2.5">
+            <div class="flex flex-col justify-center items-center text-center gap-y-2.5">
                 <!-- img-->
-                <img class="w-20" src="./img/4.png" alt="">
+                <img class="2xl:w-20 xl:w-20 lg:w-20 md:w-20 w-12" src="./img/4.png" alt="">
                 <!-- title -->
-                <p class="font-alegreya text-white uppercase">logo design</p>
+                <p
+                    class="font-alegreya 2xl:text-base xl:text-base lg:text-base md:text-base text-sm font-medium 2xl:text-white xl:text-white lg:text-white md:text-white text-gray-400 uppercase">
+                    logo design</p>
                 <!-- info -->
-                <p class="font-nunito text-sm text-center text-[#262858] font-semibold w-2/3">PROCREATE , AI ,
+                <p
+                    class="font-nunito 2xl:text-sm xl:text-sm lg:text-sm md:text-sm text-xs text-center text-[#262858] font-semibold w-2/3">
+                    PROCREATE , AI ,
                     MIDJOURNEY</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-y-2.5">
+            <div class="flex flex-col justify-center items-center text-center gap-y-2.5">
                 <!-- img-->
-                <img class="w-20" src="./img/5.png" alt="">
+                <img class="2xl:w-20 xl:w-20 lg:w-20 md:w-20 w-12" src="./img/5.png" alt="">
                 <!-- title -->
-                <p class="font-alegreya text-white uppercase">3d design</p>
+                <p
+                    class="font-alegreya 2xl:text-base xl:text-base lg:text-base md:text-base text-sm font-medium 2xl:text-white xl:text-white lg:text-white md:text-white text-gray-400 uppercase">
+                    3d design</p>
                 <!-- info -->
-                <p class="font-nunito text-sm text-center text-[#262858] font-semibold w-2/3">THREE.JS , BLENDER</p>
+                <p
+                    class="font-nunito 2xl:text-sm xl:text-sm lg:text-sm md:text-sm text-xs text-center text-[#262858] font-semibold w-2/3">
+                    THREE.JS , BLENDER</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-y-2.5">
+            <div class="flex flex-col justify-center items-center text-center gap-y-2.5">
                 <!-- img-->
-                <img class="w-20" src="./img/6.png" alt="">
+                <img class="2xl:w-20 xl:w-20 lg:w-20 md:w-20 w-12" src="./img/6.png" alt="">
                 <!-- title -->
-                <p class="font-alegreya text-white uppercase">Work with AI and midjourney</p>
+                <p
+                    class="font-alegreya 2xl:text-base xl:text-base lg:text-base md:text-base text-sm font-medium 2xl:text-white xl:text-white lg:text-white md:text-white text-gray-400 text-center uppercase">
+                    Work with
+                    <br class="2xl:hidden xl:hidden lg:hidden md:hidden block"> AI and midjourney
+                </p>
                 <!-- info -->
-                <p class="font-nunito text-sm text-center text-[#262858] font-semibold w-2/3"></p>
+                <p
+                    class="font-nunito 2xl:text-sm xl:text-sm lg:text-sm md:text-sm text-xs text-center text-[#262858] font-semibold w-2/3">
+                </p>
             </div>
 
         </div>
 
-        <div class="h-24 z-10 blur-xl bg-[#edf4fa] w-full absolute bottom-0">
+        <div class="h-32 z-10 blur-xl bg-[#edf4fa] w-full absolute -bottom-10">
             <p class="text-[#edf4fa]">mm</p>
         </div>
 
     </div>
 
 
-    <!-- mountain -->
+    <!-- Experiences -->
 
-    <div class="bg-[url('/img/IMG_2152.PNG')] h-screen w-full bg-center bg-cover">
+    <div class="relative bg-[url('/img/IMG_2152.PNG')] h-screen w-full bg-center bg-cover
+    flex flex-col items-center  pt-14">
+        <h1
+            class="2xl:text-5xl xl:text-5xl lg:text-5xl md:text-5xl text-2xl
+             text-[#26596f] font-bold font-alegreya uppercase 
+             2xl:mt-8 xl:mt-8 lg:mt-8 md:mt-8 mt-5 ">
+            Experiments</h1>
+
+        <div class="2xl:grid-col-none xl:grid-col-none lg:grid-col-none md:grid-col-none grid grid-col-1
+        2xl:mt-8 xl:mt-8 lg:mt-8 md:mt-8 mt-5 
+         pt-10 font-nunito">
+            <div class="2xl:absolute xl:absolute lg:absolute md:absolute relative 
+            2xl:left-10 xl:left-10 lg:left-10 md:left-10 top-52 
+            2xl:w-1/3  xl:w-1/3  lg:w-1/3  md:w-1/3  w-full 
+            2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-10 
+            flex flex-col items-center justify-center 
+            2xl:space-y-2.5 xl:space-y-2.5 lg:space-y-2.5 md:space-y-2.5  space-y-1">
+                <!-- img -->
+                <img class="2xl:w-48 xl:w-48 lg:w-48 md:w-48 w-32 lab" src="./img/lab2.png" alt="">
+                <!-- title -->
+                <h1 class="pt-5 drop-shadow-lg 2xl:text-[#3d6477] xl:text-[#3d6477] lg:text-[#3d6477] md:text-[#3d6477] text-[#fff] text-lg font-medium">
+                    Mechatronics Research Laboratory
+                </h1>
+                <!-- text -->
+                <p class=" text-sm text-[#4e84a7] text-center">
+                    Islamic Azad University, Qazvin , Iran
+                </p>
+                <p class=" text-sm text-[#75a5ca] text-center font-medium animate-pulse">
+                    Member of (Small Size Footboller Robots)
+                </p>
+            </div>
+
+            <div class="absolute z-20
+            2xl:top-52  xl:top-52  lg:top-52  md:top-52  top-40 
+            2xl:right-10 xl:right-10 lg:right-10 md:right-10 right-[10px] 
+            2xl:w-1/3  xl:w-1/3  lg:w-1/3  md:w-1/3  w-full 
+            flex flex-col items-center justify-center
+            2xl:space-y-2.5 xl:space-y-2.5 lg:space-y-2.5 md:space-y-2.5  space-y-1">
+                <!-- img -->
+                <img class="2xl:w-44 xl:w-44 lg:w-44 md:w-44 w-32 lab" src="./img/robot.png" alt="">
+                <!-- title -->
+                <h1 class="pt-5 drop-shadow-lg text-[#3d6477] text-lg font-medium">
+                    RoboCup Australia
+                </h1>
+                <!-- text -->
+                <p class=" text-sm text-[#4e84a7] text-center">
+                    Australia
+                </p>
+                <p class=" text-sm
+                2xl:text-[#75a5ca] xl:text-[#75a5ca] lg:text-[#75a5ca] md:text-[#75a5ca] text-[#75a5ca]
+                 text-center font-medium animate-pulse">
+                    3rd place in Small Size league
+                </p>
+            </div>
+
+            <div class=" 
+            2xl:mt-40  xl:mt-40  lg:mt-40  md:mt-40  mt-64
+            
+            flex flex-col items-center justify-center 
+            2xl:space-y-2.5 xl:space-y-2.5 lg:space-y-2.5 md:space-y-2.5  space-y-1">
+                <!-- img -->
+                <img class="2xl:w-52 xl:w-52 lg:w-52 md:w-52 w-32 lab" src="./img/room.png" alt="">
+                <!-- title -->
+                <h1 class="pt-3 drop-shadow-lg text-[#b9cbd4]  text-lg font-medium">
+                    Freelancer Projects
+                </h1>
+                <!-- text -->
+                <p class=" text-sm text-[#75a5ca] text-center">
+
+                </p>
+                <p class=" text-sm text-[#75a5ca] text-center font-medium animate-pulse">
+                    Involved in multiple projects
+                </p>
+            </div>
+        </div>
+
+
+        <div class="h-32 z-10 blur-xl bg-[#26596f] w-full absolute -bottom-10">
+            <p class="text-[#edf4fa]">mm</p>
+        </div>
+
     </div>
 
     <!-- blue -->
