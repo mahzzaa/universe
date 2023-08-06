@@ -8,6 +8,11 @@ body{
   font-size: 14px;
 }
 
+
+.text-2xs{
+  font-size: x-small;
+}
+
 .font-alegreya {
   font-family: "Alegreya Sans SC", sans-serif;
 }
@@ -22,6 +27,13 @@ body{
   color: #eabb5f;
   text-shadow: 0 0 10px #eabb5f, 0 0 20px #eabb5f, 0 0 40px #eabb5f,
     0 0 80px #eabb5f, 0 0 120px #eabb5f;
+}
+
+
+.nav-item:hover {
+  color: #eabb5f;
+  text-shadow: 0 0 5px #eabb5f, 0 0 10px #eabb5f, 0 0 20px #eabb5f,
+    0 0 40px #eabb5f, 0 0 60px #eabb5f;
 }
 
 .active {
